@@ -26,6 +26,9 @@
 		<spring.data>1.10.3.RELEASE</spring.data>
 		<apacheds.version>2.0.0-M21</apacheds.version>
 		<commons-io>2.5</commons-io>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>1.8</java.version>
 	</properties>
 	<description>	
  
@@ -50,11 +53,11 @@
 			<version>4.3.5.RELEASE</version>
 		</dependency>
 
-<!-- 		<dependency> -->
-<!-- 			<groupId>org.springframework</groupId> -->
-<!-- 			<artifactId>spring-webmvc</artifactId> -->
-<!-- 			<version>4.3.5.RELEASE</version> -->
-<!-- 		</dependency> -->
+		<!-- <dependency> -->
+		<!-- <groupId>org.springframework</groupId> -->
+		<!-- <artifactId>spring-webmvc</artifactId> -->
+		<!-- <version>4.3.5.RELEASE</version> -->
+		<!-- </dependency> -->
 
 
 	</dependencies>
