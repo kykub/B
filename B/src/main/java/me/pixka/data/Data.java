@@ -11,22 +11,21 @@ import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
 import javax.persistence.Version;
 
-import org.hibernate.annotations.CreationTimestamp;
 import org.springframework.data.annotation.LastModifiedDate;
 
 @MappedSuperclass
 public class Data implements Datainterface {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
+	protected Long id;
 	@Column(nullable = true)
-	private Integer addby = 0;
+	protected Integer addby = 0;
 	//@CreationTimestamp
-	private Date adddate;
+	protected Date adddate;
 	@LastModifiedDate
-	private Date lastedit;
+	protected Date lastedit;
 	@Version
-	private Integer vers;
+	protected Integer vers;
 
 	@PrePersist
 	public void add() {

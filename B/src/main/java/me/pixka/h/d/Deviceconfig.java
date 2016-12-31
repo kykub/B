@@ -32,6 +32,7 @@ public class Deviceconfig extends Data{
 	private Long runtime = 10000l; // runtime สำหรับ เวลาใน�?าร run
 	@Column(insertable = false, updatable = false)
 	private Long device_id;
+	
 	@OneToMany(mappedBy = "deviceconfig", cascade = CascadeType.ALL)
 	private List<PortConfig> ports;
 

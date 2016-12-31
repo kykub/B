@@ -1,5 +1,7 @@
 package me.pixka.data.s;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -23,7 +25,15 @@ public class DeviceconfigService {
 	}
 
 	public Deviceconfig last() {
-		return dao.findTop1OrderByIdDesc();
+		return dao.findTopByOrderByIdDesc();
+	}
+
+	public List list() {
+		return (List) dao.findAll();
+	}
+
+	public Deviceconfig findOne(Long id) {
+		return dao.findById(id);
 	}
 
 }

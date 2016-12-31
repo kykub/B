@@ -8,6 +8,8 @@ import me.pixka.h.d.Deviceconfig;
 @Repository
 public interface DeviceconfigRepo extends CrudRepository<Deviceconfig, Long> {
 
-	Deviceconfig findTop1OrderByIdDesc();
+	//Deviceconfig findTop1OrderByIdDesc();
+	Deviceconfig findById(Long id);
+	Deviceconfig findTopByOrderByIdDesc();
 
 }

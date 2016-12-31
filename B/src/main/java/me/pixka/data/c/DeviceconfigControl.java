@@ -1,5 +1,7 @@
 package me.pixka.data.c;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
@@ -22,5 +24,13 @@ public class DeviceconfigControl {
 	public Deviceconfig last() {
 
 		return service.last();
+	}
+
+	public List list() {
+		return service.list();
+	}
+
+	public Deviceconfig findOne(Long id) {
+		return service.findOne(id);
 	}
 }
