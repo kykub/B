@@ -39,19 +39,25 @@
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
-			<version>${hb.newversion}</version>
+			<version>RELEASE</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.data</groupId>
 			<artifactId>spring-data-jpa</artifactId>
-			<version>${spring.data}</version>
+			<version>RELEASE</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-web</artifactId>
-			<version>4.3.5.RELEASE</version>
+			<version>RELEASE</version>
+		</dependency><!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>RELEASE</version>
 		</dependency>
+
 
 		<!-- <dependency> -->
 		<!-- <groupId>org.springframework</groupId> -->
