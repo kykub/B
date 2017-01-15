@@ -25,7 +25,7 @@ public class Data implements Datainterface {
 	@LastModifiedDate
 	protected Date lastedit;
 	@Version
-	protected Integer vers;
+	protected Integer vers=0;
 
 	@PrePersist
 	public void add() {
